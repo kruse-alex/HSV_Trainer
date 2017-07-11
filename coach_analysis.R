@@ -2,6 +2,14 @@
 # PREPARE DATA
 #############################################################################################################################################
 
+# pkgs
+require(sqldf)
+require(tidyverse)
+require(data.table)
+require(TraMineR)
+require(splitstackshape)
+
+# get data
 setwd("K:/Consulting/13_Alex_Data_Analyst/Datenanalyse_Projekte/Weitere/buli")
 mydata = read.csv("1liga.csv", header = T, sep = ";")
 trainer = read.csv("trainer.csv", header = T, sep = ";")
